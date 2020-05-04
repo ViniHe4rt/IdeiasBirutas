@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<htlm>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ideias Birutas</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Style/style.css" />
+  </head>
+
+  <body>
+    <div id="box">
+      <section id="intro">
+        <header>
+          <img
+            src="./Images/Logo.png"
+            alt="Logo do site Ideias birutas"
+            id="logo"
+          />
+        </header>
+
+        <main>
+          <p>
+            Nós temos várias ideias todos os dias mas a maioria nós não
+            colocamos em prática porque esquecemos.
+          </p>
+          <p>
+            Por isso, vamos começar a registrar as ideias por aqui, qualquer
+            <b>IDEIA BIRUTA</b> <br />
+            para quando a gente não saber o que fazer.
+          </p>
+          <p>
+            Comece clicando em <b>VER IDEIAS</b> para ver as ideias já
+            cadastradas e sinta-se a vontade para
+            <b>cadastrar as suas também</b>.
+          </p>
+        </main>
+
+        <section id="buttons">
+          <button onclick="onOff()">+ adicionar ideia</button>
+          <button class="seeidea">Ver Ideias</button>
+        </section>
+
+        <footer>
+          Com ♡
+          <a href="http://github.com/ViniHe4rt" target="_blanck">ViniHe4rt </a>
+        </footer>
+      </section>
+
+      <section id="lastideas">
+        <div class="idea">
+          <img src="./Images/Icons/code.png" alt="Icone de programar" />
+
+          <div class="content">
+            <h3>Programar</h3>
+            <p>Estudos</p>
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              reprehenderit quam omnis sed laboriosam molestiae. Inventore
+              doloribus consectetur, labore optio odit quibusdam est odio
+              dignissimos saepe voluptatem quia voluptatibus perferendis.
+            </div>
+            <a href="#">Ir para a ideia</a>
+          </div>
+        </div>
+
+        <div class="idea">
+          <img src="./Images/Icons/002-video game.png" alt="Icone de jogar" />
+
+          <div class="content">
+            <h3>Jogar</h3>
+            <p>Diversão</p>
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              reprehenderit quam omnis sed laboriosam molestiae. Inventore
+              doloribus consectetur, labore optio odit quibusdam est odio
+              dignissimos saepe voluptatem quia voluptatibus perferendis.
+            </div>
+            <a href="#">Ir para a ideia</a>
+          </div>
+        </div>
+
+        <div class="idea">
+          <img
+            src="./Images/Icons/021-gym.png"
+            alt="Icone de atividade fisica"
+          />
+
+          <div class="content">
+            <h3>Fazer exercício fisico</h3>
+            <p>exercício fisico</p>
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              reprehenderit quam omnis sed laboriosam molestiae. Inventore
+              doloribus consectetur, labore optio odit quibusdam est odio
+              dignissimos saepe voluptatem quia voluptatibus perferendis.
+            </div>
+            <a href="#">Ir para a ideia</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div id="modal" class="hide"> 
+      <div class="content">
+        <h1>Nova ideia</h1>
+
+        <form action="">
+          <div class="inputwrapper">
+            <label for="title">Nome da ideia</label>
+            <input type="text" name="title" />
+          </div>
+
+          <div class="inputwrapper">
+            <label for="category">Categoria</label>
+            <input type="text" name="category" />
+          </div>
+
+          <div class="inputwrapper">
+            <label for="image">Link da imagem</label>
+            <input type="url" name="image" />
+          </div>
+
+          <div class="inputwrapper">
+            <label for="description"
+              >Digite uma descrição para esse ideia</label>
+            <textarea name="description" cols="30" rows="10"></textarea>
+          </div>
+
+          <div class="inputwrapper">
+            <label for="link">Link da ideia</label>
+            <input type="url" name="link" />
+          </div>
+          
+          <a href="#" onclick="onOff()">Voltar</a>
+          <button>Salvar</button>
+
+        </form>
+      </div>
+    </div>
+
+    <script src="./Script/script.js"></script>
+  </body>
+</htlm>
