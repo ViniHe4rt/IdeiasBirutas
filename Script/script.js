@@ -1,6 +1,6 @@
 console.log('EIta');
 
-function onOff(){
+function newIdea(){
     document
     .querySelector("#modal")
     .classList
