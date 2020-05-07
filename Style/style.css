@@ -1,33 +1,39 @@
 body {
   background: rgb(223, 213, 213);
   color: rgb(41, 38, 38);
+  
   margin: 0px;
 
-  font-family: 'Montserrat', sans-serif;
-
+  font-family: "Montserrat", sans-serif;
 }
 
-a{ 
+ /* globais */ 
+a {
   color: rgb(104, 31, 104);
   font-weight: bold;
 
   text-decoration: none;
 }
 
-a:hover{
+a:hover {
   text-decoration: underline;
 }
 
+p {
+  font-size: 16px;
+}
+
+
+/* box da esquerda */
 #box {
   width: 100%;
   max-width: 980px;
   margin: 40px auto;
-
+  
   display: flex;
-
 }
 
-#intro { 
+#intro {
   width: 300px;
   margin-right: 50px;
 }
@@ -40,11 +46,8 @@ main {
   width: 300px;
 }
 
-p {
-  font-size: 16px;
-}
-
-p, .description {
+p,
+.description {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.1px;
@@ -54,22 +57,21 @@ p, .description {
   margin-bottom: 32px;
   display: flex;
   justify-content: space-evenly;
-
 }
 
 button {
-  font-weight: bold;
-  border: none;
- 
   background: none;
   color: rgb(104, 31, 104);
-
-  cursor: pointer;
-  outline: none;
-
+  
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.2px;
+
+  font-weight: bold;
+  border: none;
+
+  cursor: pointer;
+  outline: none;
 }
 
 button.seeidea {
@@ -81,91 +83,92 @@ button.seeidea {
   height: 40px;
 
   box-shadow: 7px 8px 16px rgba(41, 10, 32, 0.15);
-  
 }
 
 button:hover {
   text-decoration: underline;
 }
 
-button.seeidea:hover{
+button.seeidea:hover {
   text-decoration: none;
 }
 
-#buttons, footer {
+#buttons,
+footer {
   text-align: center;
 }
 
-footer{
+footer {
+  color: rgb(41, 38, 38);
 
-      font-size: 14px;
-      line-height: 18px;
-      letter-spacing: 0.2px;
-      font-weight: 400;
-
-      color: rgb(41, 38, 38);      
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.2px;
 }
 
-footer a{
-
+footer a {
   opacity: 0.7;
-
 }
 
-.idea{
+
+/* right box */ 
+.idea {
+  background-color: rgb(243, 236, 236);
+  
   display: flex;
   margin-bottom: 32px;
-  background-color: rgb(243, 236, 236);
   border-radius: 8px;
   padding: 32px;
+  
   box-shadow: 0 4px 16px -8px rgba(1, 1, 1, 0.1);
 }
 
-.idea img{
+.idea img {
   width: 70px;
   height: 70px;
   margin-right: 32px;
 }
 
-.idea h3{
+.idea h3 {
   margin: 0px;
 }
 
-.idea p{
-  margin: 8px 0;
+.idea p {
   color: rgb(41, 38, 38);
+  margin: 8px 0;
 }
 
-.idea .description{
+.idea .description {
   margin: 16px 0;
 }
 
+/* cadastro de novas ideias */ 
 #modal {
   background: rgb(104, 31, 104);
 
   position: absolute;
-  top: 0; 
   width: 100vw;
   height: 100vw;
+  top: 0;
 
   display: flex;
   justify-content: center;
 }
 
-#modal .content{
-  margin-top: 128px;
-
+#modal .content {
   color: white;
-
+  
+  margin-top: 128px;
 }
 
-#modal .content h1{
+#modal .content h1 {
   text-align: center;
   text-transform: uppercase;
-  text-shadow:1px 6px rgba(41, 38, 38,0.5);
+  text-shadow: 1px 6px rgba(41, 38, 38, 0.5);
 }
 
-#modal form{
+#modal form {
   width: 80%;
   max-width: 800px;
 
@@ -173,17 +176,17 @@ footer a{
 
   display: grid;
   grid-template-columns: 1fr 1fr;
-
   gap: 20px;
 }
 
 .content form div:nth-child(3),
 .content form div:nth-child(4),
-.content form div:nth-child(5){
+.content form div:nth-child(5) {
   grid-column: span 2;
 }
 
-form input, form textarea {
+form input,
+form textarea {
   width: 100%;
   padding: 12px;
   box-sizing: border-box;
@@ -193,7 +196,7 @@ form input, form textarea {
   font-size: 16px;
 }
 
-form label{
+form label {
   font-size: 600;
   line-height: 32px;
   letter-spacing: 0.8px;
@@ -202,26 +205,29 @@ form label{
 form a {
   background-color: #ffffff22;
   color: white;
+  
   display: flex;
   align-items: center;
   justify-content: center;
   width: 140px;
-  height:40px;
+  height: 40px;
+  
   border-radius: 5px;
-  text-shadow:1px solid rgba(41, 10, 32, 0.15);
+  text-shadow: 1px solid rgba(41, 10, 32, 0.15);
+  
   font-size: 14px;
   font-weight: bold;
   align-self: end;
 }
 
-form a:hover{
+form a:hover {
   background: rgb(243, 236, 236);
   color: rgb(104, 31, 104);
   text-decoration: none;
   transition: 400ms;
 }
 
-form button{
+form button {
   background: white;
 
   width: 150px;
@@ -232,12 +238,12 @@ form button{
   margin-top: 32px;
 
   grid-column: 2;
-  justify-self: end ;
+  justify-self: end;
 
   transition: 400ms;
 }
 
-form button:hover{
+form button:hover {
   background-color: rgb(56, 22, 56);
   color: white;
   text-decoration: none;
@@ -246,5 +252,4 @@ form button:hover{
 #modal.hide {
   opacity: 0;
   visibility: hidden;
-  
 }

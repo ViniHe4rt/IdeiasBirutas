@@ -12,7 +12,7 @@
   <body>
     <div id="box">
       
-      <section id="intro">
+      <section id="intro"> <!-- box da esquerda -->
 
         <header>
           <img src="./Images/Logo.png" alt="Logo do site Ideias birutas" id="logo" />
@@ -43,18 +43,16 @@
         </section>
 
         <footer>
-          Com ♡
-          <a href="http://github.com/ViniHe4rt" target="_blanck"> ViniHe4rt </a>
+          Com ♡ <a href="http://github.com/ViniHe4rt" target="_blanck"> ViniHe4rt </a>
         </footer>
       </section>
 
       <section id="lastideas">
         <div class="idea">
           <img src="./Images/Icons/code.png" alt="Icone de programar" />
-
-          <div class="content">
-            <h3>Programar</h3>
-            <p>Estudos</p>
+            <div class="content">
+              <h3>Programar</h3>
+                <p>Estudos</p>
             <div class="description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
               reprehenderit quam omnis sed laboriosam molestiae. Inventore
@@ -66,11 +64,10 @@
         </div>
 
         <div class="idea">
-          <img src="./Images/Icons/002-video game.png" alt="Icone de jogar" />
-
-          <div class="content">
-            <h3>Jogar</h3>
-            <p>Diversão</p>
+          <img src="./Images/Icons/002-video game.png" alt="Icone de jogar" />  
+            <div class="content">
+              <h3>Jogar</h3>
+                <p>Diversão</p>
             <div class="description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
               reprehenderit quam omnis sed laboriosam molestiae. Inventore
@@ -83,10 +80,9 @@
 
         <div class="idea">
           <img src="./Images/Icons/021-gym.png" alt="Icone de atividade fisica"/>
-
-          <div class="content">
-            <h3>Fazer exercício fisico</h3>
-            <p>exercício fisico</p>
+            <div class="content">
+              <h3>Fazer exercício fisico</h3>
+                <p>exercício fisico</p>
             <div class="description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
               reprehenderit quam omnis sed laboriosam molestiae. Inventore
@@ -99,11 +95,14 @@
       </section>
     </div>
 
+    <!-- register idea -->
+
     <div id="modal" class="hide"> 
       <div class="content">
         <h1>Nova ideia</h1>
 
         <form action="">
+          
           <div class="inputwrapper">
             <label for="title">Nome da ideia</label>
             <input type="text" name="title" />
@@ -131,6 +130,7 @@
           </div>
           
           <a href="#" onclick="newIdea()">Voltar</a>
+          
           <button>Salvar</button>
 
         </form>
